@@ -1,0 +1,126 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #397097;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.bgc {
+  -webkit-transition: background-color 0.4s;
+  transition: background-color 0.4s;
+}
+.bgc--second {
+  background-color: #5b9739;
+}
+.bgc--third {
+  background-color: #973976;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+}
+
+.box {
+  background-color: rgba(42, 42, 42, 0.2392156863);
+  padding: 3em 1em;
+  color: white;
+  border-radius: 5px;
+}
+.box__btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.box__btn {
+  margin: 2px 5px;
+  padding: 0.4em 0.8em;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+  border-radius: 5px;
+}
+.box__btn--active {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
+.box__title {
+  font-size: 3rem;
+  text-align: center;
+  margin: 20px 0;
+}
+.box__timer {
+  text-align: center;
+  font-size: 6rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.box__start-btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.box__start, .box__skip {
+  display: block;
+  margin: 10px;
+  font-size: 2rem;
+  padding: 0.2em 0.6em;
+  min-width: 100px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: background-color 0.4s, color 0.4s;
+  transition: background-color 0.4s, color 0.4s;
+}
+.box__start:hover, .box__start:focus, .box__skip:hover, .box__skip:focus {
+  outline: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+.box__skip {
+  display: none;
+}
+.box__skip--active {
+  display: block;
+}
+
+@media (min-width: 700px) {
+  .box {
+    padding: 4em 6em;
+  }
+  .box__title {
+    margin: 30px 0;
+    font-size: 5rem;
+  }
+  .box__timer {
+    font-size: 14rem;
+  }
+  .box__btn, .box__start, .box__skip {
+    font-size: 2.2rem;
+  }
+}/*# sourceMappingURL=main.css.map */
